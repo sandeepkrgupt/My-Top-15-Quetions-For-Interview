@@ -1,0 +1,15 @@
+1. Javascript Es6 Features.
+2. Javascript All Ajax Calls.
+3. Hoisting in Javascript.
+4. Call Vs Apply Vs Bind.
+5. Javascript Closures with Example.
+6. Data Types in JAvascript.
+7. Normal Function Vs Arrow Functions.
+8. Javascript HTTP Headers. Javascript cross domain (CORS) and CORS errors.
+9. Javascript All important Array Methods.
+10. Javascript All important Object Methods.
+11. Local Storage, Session Storage, Cache and Cookies and their uses.
+12. Javascript Event Bubbling, Event Delegate and Event Propogation.
+13. Super().
+
+
