@@ -9,7 +9,7 @@
 9. Javascript All important Array Methods.
 10. Javascript All important Object Methods.
 11. Local Storage, Session Storage, Cache and Cookies and their uses.
-12. Javascript Event Bubbling, Event Delegate and Event Propogation.
+12. Javascript Event Bubbling, Event Delegate, Event Propogation and Event looping.
 13. Super().
 
 
