@@ -4,7 +4,32 @@
 4. React router with example.
 5. React context- API.
 6. React Hooks.
+----------------------------------------------------------
 7. React HOC.
+Ans : -
+function wrapWithUser(UserInfo) {
+  const secretUserInfo = {
+    name: 'Jack Franklin'
+  };
+ 
+  return function(props) {
+    return <UserInfo user={secretUserInfo}/>
+  }
+}
+
+const AppHeader = function(props) {
+  if (props.user) {
+    return <p>Logged in as {props.user.name}</p>;
+  } else {
+    return <p>You need to login."</p>;
+  }
+};
+
+const ConnectedAppHeader = wrapWithUser(AppHeader);
+
+ReactDOM.render(<ConnectedAppHeader />, document.getElementById('root'));
+
+--------------------------------------------------------------------
 8. Why React is Fast? Some React Advantages.
 9. How many ways we can pass data between react components.
 10. React controlled Vs un-controlled components.
