@@ -1,0 +1,11 @@
+1. Mocha Chai and Enzyme with example.
+
+Ans: -
+describe('App Component', () => {
+  it('renders the Counter wrapper', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(Counter)).to.have.length(1);
+  });
+ Mocha - describe, it, assert.equal()
+ chai - expect
+ enzyme - shallow
