@@ -1,11 +1,22 @@
 1. Mocha Chai and Enzyme with example.
-
 Ans: -
 describe('App Component', () => {
   it('renders the Counter wrapper', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(Counter)).to.have.length(1);
   });
- Mocha - describe, it, assert.equal()
- chai - expect
- enzyme - shallow
+ Mocha - describe, it, assert.equal(), should.equal()
+ --CHAI ---------------------------------------
+ Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+ var expect = chai.expect then expect(foo).to.be.a('string'); expect(foo).to.equal('bar');
+ should.be.a('string'); should.equal('bar'); should.have.lengthOf(3);
+ var assert = chai.assert; assert.typeOf(foo, 'string'); assert.equal(foo, 'bar');
+ --- ENZYME ---------------------------------
+ Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output.
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
+describe('<MyComponent />', () => {
+  it('renders three <Foo /> components', () => {
+    const wrapper = shallow(<MyComponent />);
+    expect(wrapper.find(Foo)).to.have.lengthOf(3);
+});
