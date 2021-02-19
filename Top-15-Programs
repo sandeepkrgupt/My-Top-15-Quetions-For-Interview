@@ -13,3 +13,23 @@ console.log(arr2); // [1,2,3]
 arr.push(4);
 console.log(arr2); // [1,2,3] AND not [1,2,3,4]
 _________________________________________________________
+2.
+let foo = "Global foo"
+let bar = "Global Bar"
+  const obj = {
+    foo,
+    bar: 'This is bar',
+    getFoo() {
+      let foo = "ABC";
+      console.log('--',this.foo); // Global foo
+      console.log('-->',this.bar); // This is bar
+      console.log('>', bar); // Global bar
+      let getBar = function(){
+        console.log('=',this.foo); // Global foo
+        console.log('==>',this.bar); // This is bar
+      }.bind(this) // if not bind(this) // undefined , undefined
+      getBar();
+    }
+  }
+ obj.getFoo();
+_________________________________________________________
