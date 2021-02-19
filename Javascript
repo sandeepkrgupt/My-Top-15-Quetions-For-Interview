@@ -8,7 +8,12 @@
 8. Javascript HTTP Headers. Javascript cross domain (CORS) and CORS errors.
 9. Javascript All important Array Methods.
 10. Javascript All important Object Methods.
+--------------------------------------------------
 11. Local Storage, Session Storage, Cache and Cookies and their uses.
+Ans :-
+Cookies : We use cookies to better understand your needs, improve performance and provide you with personalised content and advertisements. 
+To allow us to provide a better and more tailored experience, please click the "OK" Button. View our Privacy Policy.
+------------------------------------------------
 12. Javascript Event Bubbling, Event Delegate, Event Propogation and Event looping.
 13. Super().
 
