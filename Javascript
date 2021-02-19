@@ -1,4 +1,74 @@
 1. Javascript Es6 Features.
+Ans:--
+i. Let, const.
+=> 
+  i. let and const have block level scope. 
+  ii. let is mutable const is immutable. 
+  iii. let and const are not hoisted.
+  iv. We can change the value of array or objects, cause they use reference type.
+  _________________________________________________
+ii. Arrow function
+=> diff b/w nornal and arrow function is that, Arrow function keeps the context in which they are defined.
+E.g -
+ let say we have a HTML button. On click we console this using normal function will return HTML button element.
+ Whereas arrow function will return window object in console.
+ <button onclick="fun()">click</button>
+ let button = document.querySelector("button");
+ function fun() {
+ console.log(this);
+ }
+button.addEventListner('click', fun); // HTML Button Element
+const fun_1 = () => console.log(this); // Window object.
+___________________________________________________
+iii. Destructuring
+const arr = [1,2,3,4];
+const [a,b,c] = arr; // a=1,b=2,c=3
+const obj = {
+  name: 'apple'
+  price: 10
+  }
+  const {name, price} = obj // name: apple, price: 10
+  __________________________________________________
+iv. Enhance Object Literals (foo:foo)
+=> 
+let foo = "Global foo"
+let bar = "Global Bar"
+  const obj = {
+    foo,
+    bar: 'This is bar',
+    getFoo() {
+      let foo = "ABC";
+      console.log('--',this.foo); // Global foo
+      console.log('-->',this.bar); // This is bar
+      console.log('>', bar); // Global bar
+      let getBar = function(){
+        console.log('=',this.foo); // Global foo
+        console.log('==>',this.bar); // This is bar
+      }.bind(this) // if not bind(this) // undefined , undefined
+      getBar();
+    }
+  }
+ obj.getFoo();
+
+__________________________________________________________
+v. Template String (String interpolation)
+=> 
+  let price = 10000;
+ let string = ` You have won Rs ${price}`;
+__________________________________________________________
+vi. Rest, Spread operatior and default parameter
+=> Diff spread operator is used in function call whereas rest operator is used in function argument.
+let number = [1,3,5,9]
+console.log(Math.max(...number); //spread
+function sum(...n) {
+ return n +=1;
+}
+sum(1,2,3); // rest
+________________________________________________________
+vii. Module
+viii. Module Loader(css-loader,sass-loader)
+ix. Iterator(for ..of)
+----------------------------------------------------
 2. Javascript All Ajax Calls.
 3. Hoisting in Javascript.
 4. Call Vs Apply Vs Bind.
