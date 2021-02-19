@@ -1,5 +1,5 @@
 1. Mocha Chai and Enzyme with example.
-Ans: -
+Mocha is a feature-rich JavaScript test framework running on Node. js and in the browser, making asynchronous testing simple and fun.
 describe('App Component', () => {
   it('renders the Counter wrapper', () => {
     const wrapper = shallow(<App />);
