@@ -1,10 +1,12 @@
 1. Mocha Chai and Enzyme with example.
 Mocha is a feature-rich JavaScript test framework running on Node. js and in the browser, making asynchronous testing simple and fun.
-describe('App Component', () => {
-  it('renders the Counter wrapper', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find(Counter)).to.have.length(1);
-  });
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
+describe('<MyComponent />', () => {
+  it('renders three <Foo /> components', () => {
+    const wrapper = shallow(<MyComponent />);
+    expect(wrapper.find(Foo)).to.have.lengthOf(3);
+});
  Mocha - describe, it, assert.equal(), should.equal()
  --CHAI ---------------------------------------
  Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
@@ -15,7 +17,7 @@ describe('App Component', () => {
  Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output.
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-describe('<MyComponent />', () => {
+describe('MyComponent', () => {
   it('renders three <Foo /> components', () => {
     const wrapper = shallow(<MyComponent />);
     expect(wrapper.find(Foo)).to.have.lengthOf(3);
