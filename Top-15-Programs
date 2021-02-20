@@ -33,3 +33,16 @@ let bar = "Global Bar"
   }
  obj.getFoo();
 _________________________________________________________
+
+3. ADD , REPLACE , REMOVE ITEMS FROM ARRAY
+
+ADD:-
+const arr = ["a","b"];
+arr.splice(2,0,"c","d","e");
+console.log(arr); // ["a", "b", "c", "d", "e"]
+REPLACE:-
+arr.splice(3,2,"Y","Z"); //["a", "b", "c", "Y", "Z"]
+DELETE:-
+arr.splice(1,3); //["a","e"]
+
+console.log(arr1); // ["a", "b", "c", "Y", "Z"]
