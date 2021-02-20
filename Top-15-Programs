@@ -3,15 +3,15 @@ let arr1 = [1,2,3]
 let arr2 = arr1
 console.log(arr1); // [1,2,3]
 console.log(arr2); // [1,2,3]
-arr2.push(4);
-console.log(arr2); // [1,2,3,4]
-BUT :-
+arr1.push(4);
+console.log(arr2); // [1,2,3,4]***
+BUT :------
 let arr1 = [1,2,3]
 let arr2 = [...arr1]
 console.log(arr1); // [1,2,3]
 console.log(arr2); // [1,2,3]
-arr2.push(4);
-console.log(arr2); // [1,2,3] AND not [1,2,3,4]
+arr1.push(4);
+console.log(arr2); // [1,2,3]***
 _________________________________________________________
 2.
 let foo = "Global foo"
