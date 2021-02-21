@@ -36,3 +36,26 @@ ReactDOM.render(<ConnectedAppHeader />, document.getElementById('root'));
 11. React two way binding ? Or only one way Binding with example.
 12. React Error handling or Error Boundary.
 13. React Lazy Loading?
+14. what is default props?
+Ans :-
+function ThemedButton(props) {
+  // ...render component
+}
+
+// Set default props
+ThemedButton.defaultProps = {
+  theme: "secondary",
+  label: "Button Text"
+};
+------------------------------------------------------------
+15. What is propType in React?
+Ans -
+Javascript is not a strongly typed language. Javascript functions are happy to accept data of different types.
+PropTypes is a library that helps in minimizing this problem in React by checking the types passed in the props.
+import PropTypes from 'prop-types'; 
+class Greeting extends React. Component { 
+  render() { 
+    return ( <h1>Hello, {this.props.name}</h1> );
+  } 
+  Greeting. propTypes = { name: PropTypes}
+-----------------------------------------------------------
