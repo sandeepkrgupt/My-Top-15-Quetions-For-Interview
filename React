@@ -59,3 +59,11 @@ class Greeting extends React. Component {
   } 
   Greeting. propTypes = { name: PropTypes}
 -----------------------------------------------------------
+16. Side Effect in React?
+Ans -
+Anything outside the scope of the function.
+Like
+  API/Ajax call
+  call to authentication service
+  Error tracking calls.
+  -------------------------------------------------------
