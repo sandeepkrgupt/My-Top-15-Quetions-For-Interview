@@ -1,3 +1,8 @@
+console.log(1+"2"+"3"); //123
+console.log(1++"2"+"3"); //123
+console.log(1++); //Invalid left-hand side expression in postfix operation
+console.log(1++2); // Invalid left-hand side expression in postfix operation
+-----------------------------------------------------------
 1. Javascript Es6 Features.
 Ans:--
 i. Let, const.
