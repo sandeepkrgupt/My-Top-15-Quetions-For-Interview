@@ -33,6 +33,16 @@ let bar = "Global Bar"
   }
  obj.getFoo();
 _________________________________________________________
+5. Reverse Array Items
+Ans :-
+var arr = [1,2,34,4];
+function reverse(items) {
+var newArr = [];
+for(let i = items.length-1; i>=0;i--) {
+newArr.push(items[i])
+}
+var result = reverse(arr);
+console.log(result);
 
 3. ADD , REPLACE , REMOVE ITEMS FROM ARRAY
 
