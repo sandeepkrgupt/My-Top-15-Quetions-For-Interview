@@ -106,3 +106,15 @@ foo: 'bar',
   }
 }
 myObject.fun();
+--------------------------------------------
+var i; //or if we comment still output is same.
+  for(var i = 0; i <=5; i++) {
+    console.log('--', i); //0,1,2,3,4,5
+  }
+console.log('==', i); // 6
+-------------------------------------------
+var i; //or let i output is same
+  for(let i = 0; i <=5; i++) {
+    console.log('--', i); //0,1,2,3,4,5
+  }
+console.log('==', i); // undefined
