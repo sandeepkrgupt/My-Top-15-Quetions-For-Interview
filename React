@@ -133,4 +133,13 @@ class App extends React.Component {
 }
 
 render(<App />, document.getElementById('root'))
+---------------------------------------
+Steps to make React app faster
+Use React. PureComponents.
+Implement immutable data structures.
+Take out unnecessary source code.
+Use constant and inline elements.
+Use Gzip or Brotli compression.
+Use ESLint-plugin-React.
+Invoke high order components.
 -----------------------------------------
