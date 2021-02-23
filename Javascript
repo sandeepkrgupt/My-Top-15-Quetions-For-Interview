@@ -92,4 +92,17 @@ To allow us to provide a better and more tailored experience, please click the "
 12. Javascript Event Bubbling, Event Delegate, Event Propogation and Event looping.
 13. Super().
 
-
+--------------------------------------------------
+var myObject = {
+foo: 'bar',
+  fun: function() {
+    var self = this;
+    console.log("outer this.foo", this.foo); // bar
+    console.log("outer this.foo", self.foo); // bar
+    (function(){
+    	console.log("inner this.foo", this.foo); // undefined
+        console.log("inner this.foo", self.foo); // bar
+    }());
+  }
+}
+myObject.fun();
