@@ -6,7 +6,7 @@
 6. React Hooks.
 ----------------------------------------------------------
 7. React HOC.
-Ans : -
+Ans : - (React.memo is an HOC).
 function wrapWithUser(UserInfo) {
   const secretUserInfo = {
     name: 'Jack Franklin'
