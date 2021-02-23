@@ -33,6 +33,12 @@ let bar = "Global Bar"
   }
  obj.getFoo();
 _________________________________________________________
+console.log(1+"2"+"3"); //123
+console.log(1++"2"+"3"); //Invalid left-hand side expression in postfix operation
+console.log(1++); //Invalid left-hand side expression in postfix operation
+console.log(1++2); // Invalid left-hand side expression in postfix operation
+__________________________________________________________
+
 5. Reverse Array Items
 Ans :-
 var arr = [1,2,34,4];
