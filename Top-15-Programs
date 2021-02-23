@@ -56,3 +56,17 @@ DELETE:-
 arr.splice(1,3); //["a","e"]
 
 console.log(arr1); // ["a", "b", "c", "Y", "Z"]
+--------------------------------------------------------
+var myObject = {
+foo: 'bar',
+  fun: function() {
+    var self = this;
+    console.log("outer this.foo", this.foo); // bar
+    console.log("outer this.foo", self.foo); // bar
+    (function(){
+    	console.log("inner this.foo", this.foo); // undefined
+        console.log("inner this.foo", self.foo); // bar
+    }());
+  }
+}
+myObject.fun();
