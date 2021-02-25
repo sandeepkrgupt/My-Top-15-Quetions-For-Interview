@@ -76,3 +76,16 @@ foo: 'bar',
   }
 }
 myObject.fun();
+_______________________________________________________
+Closure with Example.
+
+<button onclick="alert(increment())">++</button>
+
+Js -
+var increment =  (function(){ // call only once
+ counter = 0;
+ return function() {
+  return ++counter;
+ }
+}())
+---------------------------------------------------------
