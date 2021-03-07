@@ -89,3 +89,26 @@ var increment =  (function(){ // call only once
  }
 }())
 ---------------------------------------------------------
+Write a program to make Ajax request as below
+let arrApi = ['url1', 'url2','url3']
+
+---------------------------------------------------------
+How to update state only age in below state?
+
+class App extends React.Component {
+constructor(props) {
+  super(props) {
+    this.state = {
+     name:"San",
+     age: 24
+    }
+  }
+  render() {
+    return(
+      <h1>{this.state}</h1>
+      <button onClick={() => this.setState()} // update only age
+    )
+  }
+}
+}
+-------------------------------------------------------
