@@ -34,10 +34,12 @@ let bar = "Global Bar"
  obj.getFoo();
 _________________________________________________________
 console.log(1+"2"+"3"); //123
-console.log(1++"2"+"3"); //Invalid left-hand side expression in postfix operation
+console.log(1+ +"2"+"3"); //33
 console.log(1++); //Invalid left-hand side expression in postfix operation
 console.log(1++2); // Invalid left-hand side expression in postfix operation
-__________________________________________________________
+console.log(1+ +2); //3
+console.log(+"1"+2); // 3
+________________________________________________
 
 5. Reverse Array Items
 Ans :-
@@ -93,7 +95,7 @@ Write a program to make Ajax request as below
 let arrApi = ['url1', 'url2','url3']
 
 ---------------------------------------------------------
-How to update state only age in below state?
+How to update only age in below state?
 
 class App extends React.Component {
 constructor(props) {
